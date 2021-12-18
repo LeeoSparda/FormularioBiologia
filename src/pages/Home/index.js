@@ -2,7 +2,7 @@ import React, {useState, useContext} from 'react';
 import { Platform,SafeAreaView,StyleSheet, View, Text, Image, TouchableOpacity } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import { Background, Container, Logo, AreaInput, Input, SubmitButton, SubmitText, Link, LinkText, } from './styles';
-
+import Header  from '../../components/Header';
 
 export default function SignIn() {
   const navigation = useNavigation();
@@ -10,6 +10,7 @@ export default function SignIn() {
  return (
    
    <Background>
+     <Header/>
       <Container>
 
       {/* <SubmitButton onPress={ () => navigation.navigate('Planta')}>
@@ -20,6 +21,7 @@ export default function SignIn() {
 
         <SafeAreaView>
           <View>
+            {/* <TouchableOpacity onPress={ () => navigation.navigate('Planta')}> */}
             <TouchableOpacity onPress={ () => navigation.navigate('Planta')}>
               <Image
                 source={require('../../assets/planta.jpeg')}

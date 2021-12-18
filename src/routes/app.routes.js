@@ -2,7 +2,7 @@ import React from 'react';
 import { createDrawerNavigator } from '@react-navigation/drawer';
 
 import Home from '../pages/Home';
-import New from '../pages/New';
+// import New from '../pages/New';
 import Profile from '../pages/Profile';
 import Planta from '../pages/Planta';
 import Fungo from '../pages/Fungo';
@@ -35,7 +35,6 @@ function AppRoutes(){
         <AppDrawer.Screen name="Planta" component={Planta} />
         <AppDrawer.Screen name="Fungo" component={Fungo} />
         <AppDrawer.Screen name="Formulario" component={Formulario} />
-        <AppDrawer.Screen name="Registrar" component={New} />
         <AppDrawer.Screen name="Perfil" component={Profile} />
         
 

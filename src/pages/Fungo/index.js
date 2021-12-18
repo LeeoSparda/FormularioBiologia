@@ -10,7 +10,7 @@ export default function Fungo() {
   <Background>
   <Container>
      <View>
-          <Text>Fungo</Text>
+          <Text>EM CONTRUÇÃO</Text>
           
       </View>
   </Container>

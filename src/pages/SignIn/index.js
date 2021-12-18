@@ -34,6 +34,7 @@ export default function SignIn() {
           autoCapitalize="none"
           value={email}
           onChangeText={ (text) => setEmail(text) }
+          
           />
         </AreaInput>
 
@@ -44,6 +45,7 @@ export default function SignIn() {
           autoCapitalize="none"
           value={password}
           onChangeText={ (text) => setPassword(text) }
+          secureTextEntry={true}
           />
         </AreaInput>
 

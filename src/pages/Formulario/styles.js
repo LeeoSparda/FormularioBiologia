@@ -34,13 +34,13 @@ import styled from 'styled-components/native'
  `;
 
 export const SubmitButton = styled.TouchableOpacity`
+    height: 50px;
+    width: 50%;
+    margin-top: 50px;
+    margin-left: 100px;
     align-items: center;
     justify-content: center;
     background-color: #00b94a;
-    width: 90%;
-    height: 45px;
-    border-radius: 7px;
-    margin-top: 10px;
 `;
 
 export const SubmitText = styled.Text`

@@ -3,19 +3,8 @@ import React, {useState} from 'react';
 import {  SafeAreaView, TextInput, TouchableWithoutFeedback, FlatList, StyleSheet, View, TouchableOpacity, Button, } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import { Background, Text, SubmitText, SubmitButton, Image } from './styles';
+import Header  from '../../components/Header';
     
-
-// export default function Planta() {
-  
-//  return (
-//   <SafeAreaView>
-//     <Text>To-Do List</Text>
-//     <TextInput />
-//   </SafeAreaView>
-
-//   );
-// }
-
 const styles = StyleSheet.create({
   container: {
     padding: 20,
@@ -87,6 +76,7 @@ const MenuPlanta = () => {
 
   return (
   <Background>
+    <Header/>
     <SafeAreaView>
       <View style={styles.container}>
         <Text>PLANTA</Text>

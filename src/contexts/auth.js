@@ -51,7 +51,14 @@ function AuthProvider({ children }){
         .then(async (value)=>{
             let uid = value.user.uid;
             await firebase.database().ref('users').child(uid).set({
-                saldo: 0,
+                alternas: 0,
+                verticiladas: 0,
+                opostas: 0,
+                arvoreta: 0,
+                arbusto: 0,
+                herbácea: 0,
+                AmostraPossuiFlor: 0, 
+                form: 0,
                 nome: nome
             })
             .then(()=>{

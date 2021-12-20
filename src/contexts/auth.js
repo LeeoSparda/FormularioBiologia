@@ -51,13 +51,7 @@ function AuthProvider({ children }){
         .then(async (value)=>{
             let uid = value.user.uid;
             await firebase.database().ref('users').child(uid).set({
-                alternas: 0,
-                verticiladas: 0,
-                opostas: 0,
-                arvoreta: 0,
-                arbusto: 0,
-                herbácea: 0,
-                AmostraPossuiFlor: 0, 
+                
                 form: 0,
                 nome: nome
             })
@@ -69,10 +63,14 @@ function AuthProvider({ children }){
                 };
                 setUser(data);
                 storageUser(data);
+            }).catch(error=>{
+                alert(error);
+                console.log(error)
             })
         })
         .catch((error)=> {
-            alert(error.code);
+            console.log(error)
+            alert(error);
         });
     }
 

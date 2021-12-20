@@ -4,6 +4,8 @@ import {  SafeAreaView, TextInput, TouchableWithoutFeedback, FlatList, StyleShee
 import { useNavigation } from '@react-navigation/native';
 import { Background, Text, SubmitText, SubmitButton, Image } from './styles';
 import Header  from '../../components/Header';
+
+
     
 const styles = StyleSheet.create({
   container: {
@@ -68,8 +70,10 @@ const MenuPlanta = () => {
 
   //Funcao para criar o item no campo
   const handleRenderTask = ({item}) => 
-  <SubmitButton onPress={() => navigation.navigate('Formulario')}>
-    <View>
+  <SubmitButton style={{backgroundColor: '#95B05F', marginTop: 25}} onPress={() => navigation.navigate('Cadastro', {
+    planta: item
+  })}>
+    <View >
       <SubmitText>{item}</SubmitText>
     </View>
   </SubmitButton>
